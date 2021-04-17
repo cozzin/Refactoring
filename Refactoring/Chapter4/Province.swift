@@ -30,6 +30,10 @@ final class Province: Decodable {
         price = try values.decode(Int.self, forKey: .price)
         producers = try values.decode([Producer].self, forKey: .producers)
         totalProduction = producers.reduce(into: 0) { $0 += $1.production }
+        
+        producers.forEach {
+            $0.province = self
+        }
     }
     
     var shortfall: Int {
@@ -52,7 +56,7 @@ final class Province: Decodable {
         var remainingDemand = demand
         var result = 0
         producers
-            .sorted(by: { $0.cost > $1.cost })
+            .sorted(by: { $0.cost < $1.cost })
             .forEach {
                 let contribution = min(remainingDemand, $0.production)
                 remainingDemand -= contribution

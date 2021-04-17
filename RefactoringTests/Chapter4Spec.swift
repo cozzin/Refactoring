@@ -39,6 +39,11 @@ final class Chapter4Spec: QuickSpec {
             it("profit") {
                 expect(asia.profit).to(equal(230))
             }
+            it("change production") {
+                asia.producers[0].production(amountStr: "20")
+                expect(asia.shortfall).to(equal(-6))
+                expect(asia.profit).to(equal(292))
+            }
         }
     }
 
