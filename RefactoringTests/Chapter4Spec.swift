@@ -29,9 +29,15 @@ final class Chapter4Spec: QuickSpec {
     
     override func spec() {
         describe("province") {
+            var asia: Province!
+            beforeEach {
+                asia = try! JSONDecoder().decode(Province.self, from: self.sampleProvinceData())
+            }
             it("shortfall") {
-                let asia = try JSONDecoder().decode(Province.self, from: self.sampleProvinceData())
                 expect(asia.shortfall).to(equal(5))
+            }
+            it("profit") {
+                expect(asia.profit).to(equal(230))
             }
         }
     }
