@@ -44,6 +44,36 @@ final class Chapter4Spec: QuickSpec {
                 expect(asia.shortfall).to(equal(-6))
                 expect(asia.profit).to(equal(292))
             }
+            it("zero demand") {
+                asia.demand = 0
+                expect(asia.shortfall).to(equal(-25))
+                expect(asia.profit).to(equal(0))
+            }
+            it("negative") {
+                asia.demand = -1
+                expect(asia.shortfall).to(equal(-26))
+                expect(asia.profit).to(equal(-10))
+            }
+        }
+        
+        describe("no producers") {
+            var noProducers: Province!
+            beforeEach {
+                let json: [String: Any] = [
+                    "name": "No producers",
+                    "producers": [],
+                    "demand": 30,
+                    "price": 20
+                ]
+                let data = try! JSONSerialization.data(withJSONObject: json, options: .prettyPrinted)
+                noProducers = try! JSONDecoder().decode(Province.self, from: data)
+            }
+            it("shortfall") {
+                expect(noProducers.shortfall).to(equal(30))
+            }
+            it("profit") {
+                expect(noProducers.profit).to(equal(0))
+            }
         }
     }
 

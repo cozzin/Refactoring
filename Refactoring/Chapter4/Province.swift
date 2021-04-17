@@ -17,7 +17,7 @@ final class Province: Decodable {
     }
     
     let name: String
-    let demand: Int
+    var demand: Int
     let price: Int
     
     var totalProduction: Int
