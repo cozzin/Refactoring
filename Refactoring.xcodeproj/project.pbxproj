@@ -13,19 +13,13 @@
 		CE367E31262AEA56000B6CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE367E2F262AEA56000B6CB9 /* Main.storyboard */; };
 		CE367E33262AEA58000B6CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE367E32262AEA58000B6CB9 /* Assets.xcassets */; };
 		CE367E36262AEA58000B6CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE367E34262AEA58000B6CB9 /* LaunchScreen.storyboard */; };
-		CE367E41262AEA58000B6CB9 /* RefactoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E40262AEA58000B6CB9 /* RefactoringTests.swift */; };
-		CE367E4C262AEA58000B6CB9 /* RefactoringUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E4B262AEA58000B6CB9 /* RefactoringUITests.swift */; };
+		CE367E41262AEA58000B6CB9 /* Chapter4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E40262AEA58000B6CB9 /* Chapter4Tests.swift */; };
+		CE367E67262AEAB6000B6CB9 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E65262AEAB6000B6CB9 /* Province.swift */; };
+		CE367E68262AEAB6000B6CB9 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E66262AEAB6000B6CB9 /* Producer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CE367E3D262AEA58000B6CB9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE367E1E262AEA56000B6CB9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE367E25262AEA56000B6CB9;
-			remoteInfo = Refactoring;
-		};
-		CE367E48262AEA58000B6CB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE367E1E262AEA56000B6CB9 /* Project object */;
 			proxyType = 1;
@@ -44,11 +38,10 @@
 		CE367E35262AEA58000B6CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE367E37262AEA58000B6CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE367E3C262AEA58000B6CB9 /* RefactoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE367E40262AEA58000B6CB9 /* RefactoringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactoringTests.swift; sourceTree = "<group>"; };
+		CE367E40262AEA58000B6CB9 /* Chapter4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4Tests.swift; sourceTree = "<group>"; };
 		CE367E42262AEA58000B6CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE367E47262AEA58000B6CB9 /* RefactoringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE367E4B262AEA58000B6CB9 /* RefactoringUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactoringUITests.swift; sourceTree = "<group>"; };
-		CE367E4D262AEA58000B6CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE367E65262AEAB6000B6CB9 /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		CE367E66262AEAB6000B6CB9 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +59,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE367E44262AEA58000B6CB9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +67,6 @@
 			children = (
 				CE367E28262AEA56000B6CB9 /* Refactoring */,
 				CE367E3F262AEA58000B6CB9 /* RefactoringTests */,
-				CE367E4A262AEA58000B6CB9 /* RefactoringUITests */,
 				CE367E27262AEA56000B6CB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +76,6 @@
 			children = (
 				CE367E26262AEA56000B6CB9 /* Refactoring.app */,
 				CE367E3C262AEA58000B6CB9 /* RefactoringTests.xctest */,
-				CE367E47262AEA58000B6CB9 /* RefactoringUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +83,7 @@
 		CE367E28262AEA56000B6CB9 /* Refactoring */ = {
 			isa = PBXGroup;
 			children = (
+				CE367E64262AEAA6000B6CB9 /* Chapter4 */,
 				CE367E29262AEA56000B6CB9 /* AppDelegate.swift */,
 				CE367E2B262AEA56000B6CB9 /* SceneDelegate.swift */,
 				CE367E2D262AEA56000B6CB9 /* ViewController.swift */,
@@ -113,19 +98,19 @@
 		CE367E3F262AEA58000B6CB9 /* RefactoringTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE367E40262AEA58000B6CB9 /* RefactoringTests.swift */,
+				CE367E40262AEA58000B6CB9 /* Chapter4Tests.swift */,
 				CE367E42262AEA58000B6CB9 /* Info.plist */,
 			);
 			path = RefactoringTests;
 			sourceTree = "<group>";
 		};
-		CE367E4A262AEA58000B6CB9 /* RefactoringUITests */ = {
+		CE367E64262AEAA6000B6CB9 /* Chapter4 */ = {
 			isa = PBXGroup;
 			children = (
-				CE367E4B262AEA58000B6CB9 /* RefactoringUITests.swift */,
-				CE367E4D262AEA58000B6CB9 /* Info.plist */,
+				CE367E66262AEAB6000B6CB9 /* Producer.swift */,
+				CE367E65262AEAB6000B6CB9 /* Province.swift */,
 			);
-			path = RefactoringUITests;
+			path = Chapter4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +151,6 @@
 			productReference = CE367E3C262AEA58000B6CB9 /* RefactoringTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CE367E46262AEA58000B6CB9 /* RefactoringUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE367E56262AEA58000B6CB9 /* Build configuration list for PBXNativeTarget "RefactoringUITests" */;
-			buildPhases = (
-				CE367E43262AEA58000B6CB9 /* Sources */,
-				CE367E44262AEA58000B6CB9 /* Frameworks */,
-				CE367E45262AEA58000B6CB9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE367E49262AEA58000B6CB9 /* PBXTargetDependency */,
-			);
-			name = RefactoringUITests;
-			productName = RefactoringUITests;
-			productReference = CE367E47262AEA58000B6CB9 /* RefactoringUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -198,11 +165,6 @@
 					};
 					CE367E3B262AEA58000B6CB9 = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = CE367E25262AEA56000B6CB9;
-					};
-					CE367E46262AEA58000B6CB9 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = CE367E25262AEA56000B6CB9;
 					};
 				};
 			};
@@ -221,7 +183,6 @@
 			targets = (
 				CE367E25262AEA56000B6CB9 /* Refactoring */,
 				CE367E3B262AEA58000B6CB9 /* RefactoringTests */,
-				CE367E46262AEA58000B6CB9 /* RefactoringUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,13 +205,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE367E45262AEA58000B6CB9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,7 +214,9 @@
 			files = (
 				CE367E2E262AEA56000B6CB9 /* ViewController.swift in Sources */,
 				CE367E2A262AEA56000B6CB9 /* AppDelegate.swift in Sources */,
+				CE367E68262AEAB6000B6CB9 /* Producer.swift in Sources */,
 				CE367E2C262AEA56000B6CB9 /* SceneDelegate.swift in Sources */,
+				CE367E67262AEAB6000B6CB9 /* Province.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE367E41262AEA58000B6CB9 /* RefactoringTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE367E43262AEA58000B6CB9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE367E4C262AEA58000B6CB9 /* RefactoringUITests.swift in Sources */,
+				CE367E41262AEA58000B6CB9 /* Chapter4Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +235,6 @@
 			isa = PBXTargetDependency;
 			target = CE367E25262AEA56000B6CB9 /* Refactoring */;
 			targetProxy = CE367E3D262AEA58000B6CB9 /* PBXContainerItemProxy */;
-		};
-		CE367E49262AEA58000B6CB9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE367E25262AEA56000B6CB9 /* Refactoring */;
-			targetProxy = CE367E48262AEA58000B6CB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -473,7 +416,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53J4346HQ;
 				INFOPLIST_FILE = RefactoringTests/Info.plist;
@@ -487,7 +429,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refactoring.app/Refactoring";
 			};
 			name = Debug;
 		};
@@ -495,7 +436,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53J4346HQ;
 				INFOPLIST_FILE = RefactoringTests/Info.plist;
@@ -509,47 +449,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refactoring.app/Refactoring";
-			};
-			name = Release;
-		};
-		CE367E57262AEA58000B6CB9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E53J4346HQ;
-				INFOPLIST_FILE = RefactoringUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cozzin.RefactoringUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Refactoring;
-			};
-			name = Debug;
-		};
-		CE367E58262AEA58000B6CB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = E53J4346HQ;
-				INFOPLIST_FILE = RefactoringUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cozzin.RefactoringUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Refactoring;
 			};
 			name = Release;
 		};
@@ -579,15 +478,6 @@
 			buildConfigurations = (
 				CE367E54262AEA58000B6CB9 /* Debug */,
 				CE367E55262AEA58000B6CB9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE367E56262AEA58000B6CB9 /* Build configuration list for PBXNativeTarget "RefactoringUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE367E57262AEA58000B6CB9 /* Debug */,
-				CE367E58262AEA58000B6CB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
