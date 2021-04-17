@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		CE367E31262AEA56000B6CB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE367E2F262AEA56000B6CB9 /* Main.storyboard */; };
 		CE367E33262AEA58000B6CB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE367E32262AEA58000B6CB9 /* Assets.xcassets */; };
 		CE367E36262AEA58000B6CB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE367E34262AEA58000B6CB9 /* LaunchScreen.storyboard */; };
-		CE367E41262AEA58000B6CB9 /* Chapter4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E40262AEA58000B6CB9 /* Chapter4Tests.swift */; };
+		CE367E41262AEA58000B6CB9 /* Chapter4Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E40262AEA58000B6CB9 /* Chapter4Spec.swift */; };
 		CE367E67262AEAB6000B6CB9 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E65262AEAB6000B6CB9 /* Province.swift */; };
 		CE367E68262AEAB6000B6CB9 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E66262AEAB6000B6CB9 /* Producer.swift */; };
+		CE367E9B262AF0B8000B6CB9 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CE367E9A262AF0B8000B6CB9 /* Quick */; };
+		CE367EA0262AF0C9000B6CB9 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CE367E9F262AF0C9000B6CB9 /* Nimble */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		CE367E35262AEA58000B6CB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE367E37262AEA58000B6CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE367E3C262AEA58000B6CB9 /* RefactoringTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactoringTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE367E40262AEA58000B6CB9 /* Chapter4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4Tests.swift; sourceTree = "<group>"; };
+		CE367E40262AEA58000B6CB9 /* Chapter4Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4Spec.swift; sourceTree = "<group>"; };
 		CE367E42262AEA58000B6CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE367E65262AEAB6000B6CB9 /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
 		CE367E66262AEAB6000B6CB9 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE367E9B262AF0B8000B6CB9 /* Quick in Frameworks */,
+				CE367EA0262AF0C9000B6CB9 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +102,7 @@
 		CE367E3F262AEA58000B6CB9 /* RefactoringTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE367E40262AEA58000B6CB9 /* Chapter4Tests.swift */,
+				CE367E40262AEA58000B6CB9 /* Chapter4Spec.swift */,
 				CE367E42262AEA58000B6CB9 /* Info.plist */,
 			);
 			path = RefactoringTests;
@@ -147,6 +151,10 @@
 				CE367E3E262AEA58000B6CB9 /* PBXTargetDependency */,
 			);
 			name = RefactoringTests;
+			packageProductDependencies = (
+				CE367E9A262AF0B8000B6CB9 /* Quick */,
+				CE367E9F262AF0C9000B6CB9 /* Nimble */,
+			);
 			productName = RefactoringTests;
 			productReference = CE367E3C262AEA58000B6CB9 /* RefactoringTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -165,6 +173,7 @@
 					};
 					CE367E3B262AEA58000B6CB9 = {
 						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CE367E25262AEA56000B6CB9;
 					};
 				};
 			};
@@ -177,6 +186,10 @@
 				Base,
 			);
 			mainGroup = CE367E1D262AEA56000B6CB9;
+			packageReferences = (
+				CE367E99262AF0B8000B6CB9 /* XCRemoteSwiftPackageReference "Quick" */,
+				CE367E9E262AF0C9000B6CB9 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = CE367E27262AEA56000B6CB9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE367E41262AEA58000B6CB9 /* Chapter4Tests.swift in Sources */,
+				CE367E41262AEA58000B6CB9 /* Chapter4Spec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +394,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53J4346HQ;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = Refactoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -400,6 +414,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53J4346HQ;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = Refactoring/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -416,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53J4346HQ;
 				INFOPLIST_FILE = RefactoringTests/Info.plist;
@@ -429,6 +445,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refactoring.app/Refactoring";
 			};
 			name = Debug;
 		};
@@ -436,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E53J4346HQ;
 				INFOPLIST_FILE = RefactoringTests/Info.plist;
@@ -449,6 +467,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refactoring.app/Refactoring";
 			};
 			name = Release;
 		};
@@ -483,6 +502,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE367E99262AF0B8000B6CB9 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.2;
+			};
+		};
+		CE367E9E262AF0C9000B6CB9 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE367E9A262AF0B8000B6CB9 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE367E99262AF0B8000B6CB9 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		CE367E9F262AF0C9000B6CB9 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE367E9E262AF0C9000B6CB9 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE367E1E262AEA56000B6CB9 /* Project object */;
 }
