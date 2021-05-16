@@ -18,6 +18,9 @@
 		CE367E68262AEAB6000B6CB9 /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE367E66262AEAB6000B6CB9 /* Producer.swift */; };
 		CE367E9B262AF0B8000B6CB9 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = CE367E9A262AF0B8000B6CB9 /* Quick */; };
 		CE367EA0262AF0C9000B6CB9 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = CE367E9F262AF0C9000B6CB9 /* Nimble */; };
+		CE8BB1192650C713007E399C /* Chapter8Spec.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BB1182650C713007E399C /* Chapter8Spec.swift */; };
+		CE8BB11E2650C759007E399C /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BB11D2650C759007E399C /* Company.swift */; };
+		CE8BB1222650C79F007E399C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8BB1212650C79F007E399C /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		CE367E42262AEA58000B6CB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE367E65262AEAB6000B6CB9 /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
 		CE367E66262AEAB6000B6CB9 /* Producer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Producer.swift; sourceTree = "<group>"; };
+		CE8BB1182650C713007E399C /* Chapter8Spec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter8Spec.swift; sourceTree = "<group>"; };
+		CE8BB11D2650C759007E399C /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		CE8BB1212650C79F007E399C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				CE367E64262AEAA6000B6CB9 /* Chapter4 */,
+				CE8BB11C2650C732007E399C /* Chapter8 */,
 				CE367E29262AEA56000B6CB9 /* AppDelegate.swift */,
 				CE367E2B262AEA56000B6CB9 /* SceneDelegate.swift */,
 				CE367E2D262AEA56000B6CB9 /* ViewController.swift */,
@@ -103,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CE367E40262AEA58000B6CB9 /* Chapter4Spec.swift */,
+				CE8BB1182650C713007E399C /* Chapter8Spec.swift */,
 				CE367E42262AEA58000B6CB9 /* Info.plist */,
 			);
 			path = RefactoringTests;
@@ -115,6 +123,15 @@
 				CE367E65262AEAB6000B6CB9 /* Province.swift */,
 			);
 			path = Chapter4;
+			sourceTree = "<group>";
+		};
+		CE8BB11C2650C732007E399C /* Chapter8 */ = {
+			isa = PBXGroup;
+			children = (
+				CE8BB11D2650C759007E399C /* Company.swift */,
+				CE8BB1212650C79F007E399C /* Person.swift */,
+			);
+			path = Chapter8;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +246,9 @@
 				CE367E2A262AEA56000B6CB9 /* AppDelegate.swift in Sources */,
 				CE367E68262AEAB6000B6CB9 /* Producer.swift in Sources */,
 				CE367E2C262AEA56000B6CB9 /* SceneDelegate.swift in Sources */,
+				CE8BB1222650C79F007E399C /* Person.swift in Sources */,
 				CE367E67262AEAB6000B6CB9 /* Province.swift in Sources */,
+				CE8BB11E2650C759007E399C /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE367E41262AEA58000B6CB9 /* Chapter4Spec.swift in Sources */,
+				CE8BB1192650C713007E399C /* Chapter8Spec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
